@@ -8,10 +8,10 @@ app.use(express.urlencoded({ extended: true }));
 const PORT = process.env.PORT || 3000;
 
 // Route import
-const weatherRoute = require('./routes/route');
+const route = require('./routes/route');
 
 // Middleware route
-app.use('/', weatherRoute);
+app.use('/', route);
 
 // View engine
 app.set('view engine', 'ejs');
