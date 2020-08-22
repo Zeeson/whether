@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #D0DEF4;
+  background-image: url("/images/whether.png");
+  /*background-repeat: no-repeat;*/
+}
+
+.container {
+  background: url("/images/whether.jpg");
+   background-repeat: no-repeat;
+  max-width: 22rem;
+  margin: 4rem auto;
+}
+
+header {
+  background: grey;
+  height: 5rem;
+  width: 95%;
+  position: relative;
+  /*color: blue; */
+}
+
+header .compass-icon {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translate(-50%);
+  border-radius: 50%;
+}
+
+.weather-title {
+  margin: 3rem 0;
+  text-align: center;
+  color:  grey; 
+   font-weight: bolder;
+   font-size: 18px;
+}
+
+.weather-title h1 {
+  font-weight: bold;
+  font-size: 2.0rem;
+   color: grey;
+
+
+}
+
+form {
+  padding: 0 .5rem;
+}
+
+form input {
+  width: 95%;
+  height: 2.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid #807a7a;
+}
+
+.result {
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+}
+
+.result .temp {
+  font-size: 2rem;
+  margin-top: 2rem;
+  position: relative;
+
+}
+
+.result .temp::after {
+  content: 'o';
+  position: absolute;
+  font-size: 15px;
+  top: -5px;
+  right: 7rem;
+
+}
+
+.result .icon-des {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.result .icon-des .icon {
+  margin-right: 1rem;
+  color: blue;
+}
+
+.result .city {
+  font-size: 1.4rem;
+}
